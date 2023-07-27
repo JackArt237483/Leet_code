@@ -42,29 +42,29 @@
 //  console.log(num)
 
 
+// const intervals = [[1,2],[2,3],[3,4],[1,3]];
 
-const intervals = [[1,2],[2,3],[3,4],[1,3]];
+// function deleteNumber(intervals) {
+//   if (!intervals.length) {
+//     return 0;
+//   }
 
-function deleteNumber(intervals) {
-  if (!intervals.length) {
-    return 0;
-  }
+//   intervals.sort((a, b) => a[1] - b[1]);
 
-  intervals.sort((a, b) => a[1] - b[1]);
+//   let count = 0;
+//   let end = -Infinity;
 
-  let count = 0;
-  let end = -Infinity;
+//   for (let i = 0; i < intervals.length; i++) {
+//     if (intervals[i][0] >= end) {
+//       end = intervals[i][1];
+//     } else {
+//       count++;
+//     }
+//   }
 
-  for (let i = 0; i < intervals.length; i++) {
-    if (intervals[i][0] >= end) {
-      end = intervals[i][1];
-    } else {
-      count++;
-    }
-  }
+//   return count;
+// }
 
-  return count;
-}
+// const num = deleteNumber(intervals);
+// console.log(num);
 
-const num = deleteNumber(intervals);
-console.log(num);

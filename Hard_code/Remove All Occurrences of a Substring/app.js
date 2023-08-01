@@ -37,3 +37,19 @@ console.log(findAndDeleteIndex(s,part))
  здесь s.indexOf(part) здесь у тебя ищется вхождение если его не
  но метод камбекает -1 и цикл завершается и возращается строка новая
 */
+
+const str = "Artem the best"
+
+function askdf(str){
+  str.trim()
+
+  const words = str.split(" ")
+
+  if(words.length === 0){
+    return 0
+  }
+
+  return words[words.length - 1].length
+}
+
+console.log(askdf(str))
